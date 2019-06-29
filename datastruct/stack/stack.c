@@ -10,7 +10,7 @@ Stack * init(int size)
     Stack *stack = (Stack *) malloc(sizeof(Stack));
     stack->top = 0;
     stack->max_size = size;
-    stack->data = (void **) malloc(sizeof(void *) * size);
+    stack->data = (void **) malloc(sizeof(void *) * (size + 1));
 
     return stack;
 }
